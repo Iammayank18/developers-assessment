@@ -3,6 +3,8 @@ import uuid
 from pydantic import EmailStr
 from sqlmodel import Field, Relationship, SQLModel
 
+from app.api.routes.financial.models import Record  # noqa: F401
+
 
 # Shared properties
 class UserBase(SQLModel):
