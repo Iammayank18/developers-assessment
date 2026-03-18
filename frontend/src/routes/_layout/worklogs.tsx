@@ -27,7 +27,7 @@ function Worklogs() {
   const fetchWorklogs = async () => {
     try {
       setLoading(true)
-      let url = "/api/v1/financial/worklogs"
+      let url = "/api/v1/financial/worklogs/"
       const params: string[] = []
       if (activeFilter === "date" && startDate) {
         params.push(`start_date=${startDate}`)
